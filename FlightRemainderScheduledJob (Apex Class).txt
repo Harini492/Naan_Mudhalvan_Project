@@ -12,7 +12,7 @@ public class FlightReminderScheduledJob implements Schedulable {
 
         // Query for flights departing within the next 24 hours
 
-        List<Flight_c> upcomingFlights = [SELECT Id, Name, DepartureDateTimec FROM Flight_c
+        List<Flight__c> upcomingFlights = [SELECT Id, Name, DepartureDateTime__c FROM Flight__c
 
                                            WHERE DepartureDateTime__c >= :DateTime.now()
 
